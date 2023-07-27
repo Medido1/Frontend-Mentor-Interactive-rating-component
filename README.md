@@ -37,7 +37,7 @@ Users should be able to:
  ### Links
 
 - Solution URL: [solution](https://your-solution-url.com)
-- Live Site URL: [live site](https://github.com/Medido1/Frontend-Mentor-Interactive-rating-component)
+- Live Site URL: [live site](https://medido1.github.io/Frontend-Mentor-Interactive-rating-component/)
 
 ## My process
 
