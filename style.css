@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+
+:root {
+  /*  Colors */
+
+  /*  Primary */
+
+  --Orange: hsl(25, 97%, 53%);
+
+  /*  Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Light_Grey: hsl(217, 12%, 63%);
+  --Medium_Grey: hsl(216, 12%, 54%);
+  --Dark_Blue: hsl(213, 19%, 23%);
+  --Darker_Blue: hsl(213, 19%, 18%);
+  --Very_Dark_Blue: hsl(216, 12%, 8%);
+
+  /* fonts and font weights*/
+
+  --font: "Overpass", sans-serif;
+  --regular: 400;
+  --bold: 700;
+}
+
+/* css reset */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* general styling */
+
+.icon {
+  width: 15px;
+  height: auto;
+}
+
+.main {
+  height: 100vh;
+  background-color: var(--Very_Dark_Blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  font-family: var(--font);
+  font-weight: var(--regular);
+  font-size: 15px;
+  color: var(--Light_Grey);
+}
+
+/* rating card */
+
+.rating_card,
+.thankyou_card {
+  background-color: var(--Darker_Blue);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  max-width: 370px;
+}
+
+.rating_card.hide {
+  display: none;
+}
+
+.icon_container {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.icon_container,
+.rating {
+  background-color: var(--Dark_Blue);
+  border-radius: 50%;
+  align-self: flex-start;
+}
+
+.rating {
+  cursor: pointer;
+}
+
+.rating:hover {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+
+.rating.clicked {
+  background-color: var(--Light_Grey);
+  color: var(--White);
+}
+
+.rating {
+  margin: 0.75rem 0 0.75rem 0;
+  padding: 0.75rem 1rem;
+}
+
+.rating div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating_card h1,
+.thankyou_card h2 {
+  color: var(--White);
+  font-size: 1.5rem;
+  font-weight: var(--bold);
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-around;
+}
+
+.thankyou_card.hide {
+  display: none;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 100vmax;
+  border: none;
+  background-color: var(--Orange);
+  color: var(--White);
+  font-weight: var(--bold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+
+/* thank you card */
+
+.thankyou_card {
+  align-items: center;
+  text-align: center;
+}
+
+.thankyou_card img {
+  height: 100px;
+}
+
+.thankyou_card h2 {
+  font-size: 1.25rem;
+}
+
+.user_score {
+  background-color: var(--Dark_Blue);
+  border-radius: 100vmax;
+  color: var(--Orange);
+  padding: 0.25rem 0.5rem;
+  margin: 0.75rem 0 0.75rem 0;
+  font-size: 0.875rem;
+}
+
+/* attribution */
+
+.attribution {
+  margin-top: .5rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #ffffff;
+}
